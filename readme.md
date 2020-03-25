@@ -12,11 +12,11 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 #
 
 ## 🦠 Log de la quarantaine 🦠
-
+[Jour 2](#2) 
 |   |   |   |
 |---|:-:|---|
 | [`Jour 1`](#1)   | [`Jour 6`](#no)   | [`Jour 11`](#no)  |
-| [Jour 2](#2)   | [`Jour 7`](#no)   | [`Jour 12`](#no)  |
+|   | [`Jour 7`](#no)   | [`Jour 12`](#no)  |
 | [`Jour 3`](#3)   | [`Jour 8`](#no)   | [`Jour 13`](#no)  |
 | [`Jour 4`](#no)  | [`Jour 9`](#no)   | [`Jour 14`](#no)  |
 | [`Jour 5`](#no)  | [`Jour 10`](#no)  | [`Jour 15`](#no)  |
