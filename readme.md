@@ -12,7 +12,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 #
 
 ## 🦠 Log de la quarantaine 🦠
-[Jour 2](#dois) 
+[Jour 2](#jour-2) 
 |   |   |   |
 |---|:-:|---|
 | [`Jour 1`](#1)   | [`Jour 6`](#no)   | [`Jour 11`](#no)  |
@@ -34,7 +34,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 
 #
 
-[Jour 2:](#dois)
+### Jour 2
 - Cours le matin
 - Exos js sur freecodecamp
 
