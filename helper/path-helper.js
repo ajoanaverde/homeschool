@@ -1,3 +1,3 @@
-// const path = require('path');
+const path = require('path');
 
-// module.express = path.dirname(process)
+module.exports = path.dirname(process.mainModule.filename);

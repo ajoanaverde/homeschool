@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="/styles/book.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item">
+                    <a href="/">Boutique</a>
+                </li>
+                <li class="main-header__item">
+                    <a href="/admin/add-book" class="active">Rajouter un livre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/admin/books" method="POST" class="form-book">
+            <div class="form-control">
+                <label for="title">Titre du livre</label>
+                <input type="text" name="title" id="title">
+            </div>
+
+
+            <button type="submit">Ajouter un livre</button>
+        </form>
+    </main>
+</body>
+</html>

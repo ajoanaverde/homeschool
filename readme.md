@@ -1,7 +1,7 @@
 # About
 
 [💙]
-Dans ce reportoire j'ai realisé un **_Log_** du travail que j'ai fait pendent la quarantaine. Chaque **_branche_** correspond à un jour different, où le code restera untoché pour que je puisse evaluer ma progression. 
+Dans ce reportoire j'ai realisé un **_Log_** du travail que j'ai fait pendent la quarantaine. Chaque **_branche_** correspond à un jour different, où le code restera intact pour que je puisse evaluer ma progression. 
 
 
 
