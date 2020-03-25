@@ -6,6 +6,8 @@ const fs = require('fs');
 //
 // methode requestHandler
 //
+let message;
+//
 const requestHandler = (req, res) => {
     //
     // req = request
@@ -21,7 +23,7 @@ const requestHandler = (req, res) => {
     //
     // si il l'url est "vide"
     //
-    if (url === '/') {
+    if (url === '/form') {
         //
         // res = response 
         // ici on envoye le header
@@ -32,9 +34,16 @@ const requestHandler = (req, res) => {
         //
         res.write('<html>');
         res.write('<head><title>Bienvenue</title></head>');
-        res.write(
-            '<body><form action="/test" method="POST"> <input type="text" name="message"/><button type="submit">Envoyer Message</button></form></body>'
-        );
+        res.write('<body>')
+        res.write('<ul>');
+        res.write('<li><a href="/" />Home</li>');
+        res.write('<li><a href="/about">About</a></li>');
+        res.write('<li><a href="/form">Contact</a></li>');
+        res.write('</ul>');
+        res.write('<form action="/hoyhoy" method="POST">');
+        res.write('<input type="text" name="message"/>');
+        res.write('<button type="submit">Envoyer Message</button></form>');
+        res.write('</body>');
         res.write('</html>');
         //
         // ceci informe le server qu'on a fini de lire la page
@@ -45,7 +54,7 @@ const requestHandler = (req, res) => {
     //
     // si on est sur la page test et le formulaire est envoyé
     //
-    if (url === '/test' && method === 'POST') {
+    if (url === '/hoyhoy' && method === 'POST') {
         //
         // on cree una array vide pour le body
         //
@@ -93,26 +102,100 @@ const requestHandler = (req, res) => {
             // et on recupere la 2° partie du tableau [1]
             // donc le message
             // 
-            const message = parsedBody.split('=')[1];
+            message = parsedBody.split('=')[1];
+            // redirect vers une page 
+
+            res.setHeader('location', '/secret');
+            res.statusCode = 302;
+            return res.end();
             //
             // et on cree un fichier txt avec le contenue du message
             // (juste pour tester)
             // le (err) serv au cas ou on a une erreur
             // (parametre obligatoire)
             //
-            fs.writeFile('message.txt', message, (err) => {
+            //// fs.writeFile('message.txt', message, (err) => {
                 //
                 // dans le cas d'un erreur
                 // on reçois ce status code
+                // 302 =  "Found"
+                // a common way of performing URL redirection
                 //
-                res.statusCode = 302;
+            ////    res.statusCode = 302;
                 //
                 // et cette page
                 //
-                res.setHeader('location', '/');
-                return res.end();
-            });
+        ////        res.setHeader('location', '/');
+        ////        return res.end();
+        ////    });
         });
+    }
+    //
+    // EXO
+    //
+    // landing page
+    //
+    if (url === '/') {
+        res.setHeader('Content-Type', 'text/html');
+        res.write('<html>');
+        res.write('<head><title>Bienvenue</title></head>');
+        res.write('<body>');
+        res.write('<ul>');
+        res.write('<li><a href="/" />Home</li>');
+        res.write('<li><a href="/about">About</a></li>');
+        res.write('<li><a href="/form">Contact</a></li>');
+        res.write('</ul>');
+        res.write('<h1>Hello World</h1>');
+        res.write('</body>');
+        res.write('</html>');
+        return res.end();
+    }
+    //
+    // EXO
+    //
+    // about page
+    //
+    if (url === '/about') {
+        res.setHeader('Content-Type', 'text/html');
+        res.write('<html>');
+        res.write('<head><title>Bienvenue</title></head>');
+        res.write('<body>');
+        res.write('<ul>');
+        res.write('<li><a href="/" />Home</li>');
+        res.write('<li><a href="/about">About</a></li>');
+        res.write('<li><a href="/form">Contact</a></li>');
+        res.write('</ul>');
+        res.write('<h1>Who am I?</h1>');
+        res.write('<p>I\'m the meme queen</p>');
+        res.write('</body>');
+        res.write('</html>');
+        return res.end();
+    }
+     //
+    // EXO
+    //
+    // secret page
+    //
+    if (url === '/secret') {
+        console.log(message);
+        res.setHeader('Content-Type', 'text/html');
+        res.write('<html>');
+        res.write('<head><title>Secret message</title></head>');
+        res.write('<body>');
+        res.write('<ul>');
+        res.write('<li><a href="/" />Home</li>');
+        res.write('<li><a href="/about">About</a></li>');
+        res.write('<li><a href="/form">Contact</a></li>');
+        res.write('</ul>');
+        res.write('<h1>Thank You!!!</h1>');
+        res.write('<p><strong>Your message was sent</strong></p>');
+        res.write('you message:');
+        res.write('<hr>');
+        res.write(message);
+        res.write('<hr>');
+        res.write('</body>');
+        res.write('</html>');
+        return res.end();
     }
     //
     // ceci est le "else"
@@ -126,7 +209,15 @@ const requestHandler = (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
     res.write('<head><title>Erreur 404</title></head>');
-    res.write('<body><h1>Erreur 404</h1></body>');
+    res.write('<body>');
+    res.write('<hr>');
+    res.write('<h1>Page not found</h1>');
+    res.write('<p>Your meme is in another castle</p>');
+    res.write('<br>');
+    res.write('<a href="/">return home</a>');
+    res.write('<br>');
+    res.write('<hr>');
+    res.write('</body>');
     res.write('</html>');
     return res.end();
 };
