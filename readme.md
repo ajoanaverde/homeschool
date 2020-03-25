@@ -18,9 +18,10 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 #
 
 ### 📍 Jour 3: 📍
+- Cours le matin
 - Revision du cours du 1° jour
 - Re-comenté le code
-- [ ] Exo de lundi (petit server avec 5 pages)
+- Exo de lundi (petit server avec 5 pages)
 
 #
 
