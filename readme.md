@@ -12,12 +12,12 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 #
 
 ## 🦠 Log de la quarantaine 🦠
-[Jour 2](#jour-2) 
+
 |   |   |   |
 |---|:-:|---|
-| [`Jour 1`](#1)   | [`Jour 6`](#no)   | [`Jour 11`](#no)  |
-|   | [`Jour 7`](#no)   | [`Jour 12`](#no)  |
-| [`Jour 3`](#3)   | [`Jour 8`](#no)   | [`Jour 13`](#no)  |
+| [`Jour 1`](#jour1)   | [`Jour 6`](#no)   | [`Jour 11`](#no)  |
+| [Jour 2](#jour-2)  | [`Jour 7`](#no)   | [`Jour 12`](#no)  |
+| [`Jour 3`](#jour-3)   | [`Jour 8`](#no)   | [`Jour 13`](#no)  |
 | [`Jour 4`](#no)  | [`Jour 9`](#no)   | [`Jour 14`](#no)  |
 | [`Jour 5`](#no)  | [`Jour 10`](#no)  | [`Jour 15`](#no)  |
 
@@ -26,7 +26,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 
 #
 
-### 📍 [`Jour 3:`](#3)📍
+### 📍 Jour 3: 📍
 - Cours le matin
 - Revision du cours du 1° jour
 - Re-comenté le code
@@ -39,7 +39,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 - Exos js sur freecodecamp
 
 
-### [`Jour 1 :`](#1)
+### Jour 1
 - Cours matin
 - Cours aprés-midi
 - Exos js sur freecodecamp
@@ -49,6 +49,6 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 
 #
 
-### :city_sunrise: This day is yet to rise :stars: ☄️ [](#no)
+### :city_sunrise: This day is yet to rise :stars: ☄️
 
 #
