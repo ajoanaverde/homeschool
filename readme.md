@@ -18,7 +18,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 | [`Jour 1`](#jour-1)   | [`Jour 6`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)   | [`Jour 11`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
 | [`Jour 2`](#jour-2)  | [`Jour 7`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)   | [`Jour 12`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
 | [`Jour 3`](#jour-3)   | [`Jour 8`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)   | [`Jour 13`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
-| [`Jour 4`](#jour-4)  | [`Jour 9`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)   | [`Jour 14`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
+| [`Jour 4`](#-jour-4-)  | [`Jour 9`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)   | [`Jour 14`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
 | [`Jour 5`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  | [`Jour 10`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  | [`Jour 15`](#city_sunrise-this-day-is-yet-to-rise-stars-%EF%B8%8F)  |
 
 
