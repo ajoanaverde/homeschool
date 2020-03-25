@@ -34,7 +34,7 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 
 #
 
-### [`Jour 2:`](#2)
+[`Jour 2:`](#2)
 - Cours le matin
 - Exos js sur freecodecamp
 
