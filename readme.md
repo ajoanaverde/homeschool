@@ -27,9 +27,10 @@ Cada **_branch_** corresponde a um dia, onde o trabalho que fiz sera conservado 
 #
 
 ### 📍 Jour 4 📍
--
--
--
+- Cours le matin
+- [ ] Reviser le cour du jour 3
+- [ ] Reviser node.js workflow and debugging
+- [ ] Exo du jour 3
 -
 
 #
