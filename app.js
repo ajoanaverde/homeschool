@@ -1,27 +1,39 @@
+//
 // NEW CODE (jour 3)
-
+//
 const http = require('http');
-const express = require('express');
 const path = require('path');
+//
+// on appelle le module d'express
+//
+const express = require('express');
+//
 const bodyParser = require('body-parser');
 const adminRoutes = require('./routes/admin');
 const libraryRoutes = require('./routes/library');
-
+//
+// on lance express
+//
 const app = express();
+//
+//Ceci sont des middlewhere
+//
 app.use(bodyParser.urlencoded({ extended: true }));
-
+//
 app.use(express.static(path.join(__dirname, 'public')));
-
+//
 app.use('/admin', adminRoutes);
 app.use(libraryRoutes);
-
+//
+// ceci est un middlewhere
+//
 app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 })
-
-
+//
+//
 app.listen(3000);
-
+//
 //
 //
 // OLD CODE (jour 1-2)
