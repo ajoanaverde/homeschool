@@ -8,6 +8,8 @@ const path = require('path');
 //
 const express = require('express');
 //
+// body-parser sert a recuperai des contenues 
+//
 const bodyParser = require('body-parser');
 const adminRoutes = require('./routes/admin');
 const libraryRoutes = require('./routes/library');
@@ -17,6 +19,8 @@ const libraryRoutes = require('./routes/library');
 const app = express();
 //
 //Ceci sont des middlewhere
+//
+// cela permet de recuper des contenues dans un object
 //
 app.use(bodyParser.urlencoded({ extended: true }));
 //
